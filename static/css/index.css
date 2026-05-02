@@ -221,7 +221,11 @@ a:hover {
   padding-bottom: 4.8rem;
 }
 
-.soft-section {
+main > section.section {
+  background: #ffffff;
+}
+
+main > section.section:nth-of-type(even):not(.metrics-band) {
   background: var(--soft);
 }
 
