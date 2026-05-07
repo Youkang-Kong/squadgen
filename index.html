@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css?v=20260502-metrics">
+  <link rel="stylesheet" href="./static/css/index.css?v=20260507-metric">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
@@ -112,20 +112,20 @@
     <div class="container is-max-widescreen">
       <div class="metric-grid">
         <div class="metric-item">
-          <span class="metric-value">CDF</span>
-          <span class="metric-label">easy-to-learn continuous field representation for quad layouts</span>
+          <span class="metric-value">Representation</span>
+          <span class="metric-label">easy-to-learn continuous chart distance fields for quad layouts</span>
         </div>
         <div class="metric-item">
-          <span class="metric-value">230k</span>
-          <span class="metric-label">proposed large-scale diverse simple quad layout dataset</span>
+          <span class="metric-value">Editability Metric</span>
+          <span class="metric-label">beyond vague artist-like claims</span>
         </div>
         <div class="metric-item">
-          <span class="metric-value">Loop editing</span>
-          <span class="metric-label">friendly loops for standard modeling operations</span>
+          <span class="metric-value">Large Dataset</span>
+          <span class="metric-label">230k diverse simple quad layouts dataset</span>
         </div>
         <div class="metric-item">
-          <span class="metric-value">10x</span>
-          <span class="metric-label">fewer charts than competing methods</span>
+          <span class="metric-value">10x Fewer Charts</span>
+          <span class="metric-label">simpler layouts than competing methods</span>
         </div>
       </div>
     </div>
@@ -174,6 +174,36 @@
             <img src="./static/images/why-loop-edit.png" alt="Selecting a loop on a simple quad layout and editing it with extrusion">
           </figure>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="metric-motivation">
+    <div class="container is-max-widescreen">
+      <div class="section-heading has-text-centered compact-heading">
+        <p class="eyebrow">Measuring Editability</p>
+        <h2 class="title is-3">From vague artist-like quality to a clear metric</h2>
+      </div>
+
+      <div class="metric-motivation-grid">
+        <article class="metric-motivation-card">
+          <h3>Editable means loop-editable</h3>
+          <p>
+            In modeling workflows, editability is directly tied to whether face-loops and edge-loops can be selected, followed, and modified without spiraling or self-intersection.
+          </p>
+        </article>
+        <article class="metric-motivation-card metric-motivation-card-strong">
+          <h3>A clear loop simplicity metric</h3>
+          <p>
+            We define <strong>loop simplicity</strong> to measure the area controlled by simple loops, turning editable layout quality into a concrete score instead of a subjective visual impression.
+          </p>
+        </article>
+        <article class="metric-motivation-card">
+          <h3>Beyond vague artist-like claims</h3>
+          <p>
+            Methods described as artist-like often rely on ambiguous visual criteria. Loop simplicity provides a direct, reproducible way to compare whether a generated layout is actually suitable for editing.
+          </p>
+        </article>
       </div>
     </div>
   </section>
@@ -364,7 +394,7 @@
             </div>
 
             <p class="formula-note">
-              <span class="math-inline">\(\mathcal{F}_s\)</span> and <span class="math-inline">\(\mathcal{E}_s\)</span> are the subsets of simple face-loops and edge-loops; <span class="math-inline">\(\mathcal{F}_{all}\)</span> and <span class="math-inline">\(\mathcal{E}_{all}\)</span> are all loops. The score is therefore an area-weighted ratio of simple loops to all loops.
+              <span class="math-inline">F<sub>s</sub></span> and <span class="math-inline">E<sub>s</sub></span> are the subsets of simple face-loops and edge-loops; <span class="math-inline">F<sub>all</sub></span> and <span class="math-inline">E<sub>all</sub></span> are all loops. The score is therefore an area-weighted ratio of simple loops to all loops.
             </p>
           </div>
         </div>
